@@ -1,0 +1,10 @@
+venv/
+temp/
+.env
+static/*.mp3
+
+__pycache__/
+*.pyc
+
+# VS Code settings
+.vscode/

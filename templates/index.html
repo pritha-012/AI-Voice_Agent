@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Voice Assistant</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Your AI Voice Assistant</h1>
+    <p>Have a natural conversation with advanced AI</p>
+  </header>
+  <main class="chat-container">
+    <div class="session-info">Session: <span id="session-id">session...</span></div>
+    <button id="clear-chat" class="clear-btn">Clear Chat</button>
+    <div id="messages"></div>
+    <div class="controls">
+      <button id="record-btn"><i class="fas fa-microphone"></i></button>
+      <p id="status-text">Click to start recording</p>
+      <audio id="audio-player" hidden></audio>
+    </div>
+  </main>
+  <script src="{{ url_for('static', path='js/script.js') }}"></script>
+</body>
+</html>
